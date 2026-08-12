@@ -330,6 +330,10 @@ ul { margin: 0; padding: 0; list-style: none; }
   padding: 8px 0 8px 30px;
   color: var(--ink-700);
 }
+.cta-banner .check-list li,
+.section--navy .check-list li {
+  color: rgba(255,255,255,0.82);
+}
 .check-list li::before {
   content: "";
   position: absolute;

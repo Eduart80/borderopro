@@ -76,33 +76,37 @@
       <div class="contact-form-wrap">
         <h2>Send Us a Message</h2>
         <form id="contact-form" novalidate>
+          <div class="hp-field" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
           <div class="form-row">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="100" required>
           </div>
           <div class="form-row form-row--split">
             <div>
               <label for="company">Company</label>
-              <input type="text" id="company" name="company">
+              <input type="text" id="company" name="company" autocomplete="organization" maxlength="100">
             </div>
             <div>
               <label for="jobTitle">Job Title</label>
-              <input type="text" id="jobTitle" name="jobTitle">
+              <input type="text" id="jobTitle" name="jobTitle" autocomplete="organization-title" maxlength="100">
             </div>
           </div>
           <div class="form-row form-row--split">
             <div>
               <label for="employees">Number of Employees</label>
-              <input type="text" id="employees" name="employees">
+              <input type="text" id="employees" name="employees" maxlength="20">
             </div>
             <div>
               <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone">
+              <input type="tel" id="phone" name="phone" autocomplete="tel" maxlength="30">
             </div>
           </div>
           <div class="form-row">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" autocomplete="email" maxlength="150" required>
           </div>
           <fieldset class="form-row">
             <legend>What type of payroll support are you looking for?</legend>
@@ -115,7 +119,7 @@
           </fieldset>
           <div class="form-row">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="message" rows="5" minlength="10" maxlength="2000" required></textarea>
           </div>
           <button type="submit" class="btn btn--gold btn--block">Submit Request</button>
           <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
@@ -158,6 +162,7 @@
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/contact.js"></script>
 </body>
