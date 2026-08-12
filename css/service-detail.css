@@ -1,0 +1,45 @@
+/* BorderoPro — Service detail page specific styles */
+
+.page-hero { padding: 72px 0 80px; }
+.page-hero h1 { font-size: clamp(2rem, 3.6vw, 2.8rem); max-width: 680px; }
+.page-hero p { max-width: 640px; }
+
+.service-detail-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+@media (max-width: 860px) {
+  .service-detail-grid { grid-template-columns: 1fr; }
+}
+
+.service-sidebar {
+  position: sticky;
+  top: 96px;
+  background: var(--bg-050);
+  border: 1px solid var(--line-200);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+.service-sidebar h4 {
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.service-sidebar ul { display: flex; flex-direction: column; gap: 4px; }
+.service-sidebar a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink-700);
+}
+.service-sidebar a:hover { background: #fff; color: var(--navy-800); }
+.service-sidebar a[aria-current="page"] {
+  background: var(--navy-800);
+  color: #fff;
+}
+.service-sidebar .btn { margin-top: 18px; }

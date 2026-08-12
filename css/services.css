@@ -1,0 +1,43 @@
+/* BorderoPro — Services overview page specific styles */
+
+.page-hero { padding: 80px 0 88px; }
+.page-hero h1 { font-size: clamp(2.2rem, 4vw, 3rem); max-width: 720px; }
+.page-hero p { max-width: 680px; }
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  align-items: center;
+  gap: 24px;
+  padding: 28px 32px;
+  background: #fff;
+  border: 1px solid var(--line-200);
+  border-radius: var(--radius-lg);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+.service-row:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: var(--gold-400);
+}
+.service-row:hover .card-arrow { color: var(--gold-500); }
+
+.service-row-index {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--line-200);
+}
+.service-row h2 { margin-bottom: 6px; font-size: 1.25rem; }
+.service-row p { margin: 0; }
+.service-row .card-arrow { white-space: nowrap; margin-top: 0; }
+
+@media (max-width: 640px) {
+  .service-row { grid-template-columns: 40px 1fr; }
+  .service-row .card-arrow { grid-column: 2; }
+}

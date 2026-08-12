@@ -1,0 +1,102 @@
+/* BorderoPro — Contact page specific styles */
+
+.page-hero { padding: 80px 0 88px; }
+.page-hero h1 { font-size: clamp(2.2rem, 4vw, 3rem); max-width: 680px; }
+.page-hero p { max-width: 640px; }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 56px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+.info-panel {
+  background: var(--bg-050);
+  border: 1px solid var(--line-200);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  margin-top: 20px;
+}
+.info-panel h3, .info-panel h4 { margin-bottom: 8px; }
+.info-panel p { margin: 0; }
+.info-panel a { color: var(--navy-800); font-weight: 700; }
+
+.contact-form-wrap {
+  background: #fff;
+  border: 1px solid var(--line-200);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  box-shadow: var(--shadow-sm);
+}
+
+.form-row { margin-bottom: 20px; }
+.form-row--split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 520px) {
+  .form-row--split { grid-template-columns: 1fr; }
+}
+
+label, legend {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--navy-800);
+  margin-bottom: 6px;
+  padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--line-200);
+  border-radius: 8px;
+  font: inherit;
+  color: var(--ink-900);
+  background: var(--bg-050);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--navy-600);
+  box-shadow: 0 0 0 3px rgba(31, 74, 115, 0.15);
+  background: #fff;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+.checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.checkbox-list label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  color: var(--ink-700);
+  font-size: 0.95rem;
+}
+.checkbox-list input { width: 16px; height: 16px; }
+
+.form-status {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  min-height: 1.2em;
+}
+.form-status--error { color: #b3261e; }
+.form-status--ok { color: #1f6b3a; }

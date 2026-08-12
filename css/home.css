@@ -1,0 +1,65 @@
+/* BorderoPro — Home page specific styles */
+
+.hero { padding: 96px 0 104px; }
+.hero-grid { max-width: 760px; }
+
+.hero-logo {
+  width: 128px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 14px;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  margin-bottom: 18px;
+}
+
+.hero-bilingual {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 22px;
+}
+.hero-bilingual span:first-child { font-style: italic; color: var(--gold-400); }
+
+.hero-lead {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero .container p { color: rgba(255,255,255,0.78); }
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.objective-panel {
+  background: var(--bg-050);
+  border: 1px solid var(--line-200);
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  margin-bottom: 32px;
+}
+.objective-statement {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy-800);
+}
+.objective-list { max-width: 480px; }
+
+.why-panel {
+  max-width: 720px;
+  text-align: center;
+  margin: 0 auto;
+}
+.why-panel > div { display: inline-block; text-align: left; }

@@ -1,0 +1,11 @@
+/* BorderoPro — About page specific styles */
+
+.page-hero { padding: 80px 0 88px; }
+.page-hero h1 { font-size: clamp(2.2rem, 4vw, 3rem); max-width: 720px; }
+.page-hero p { max-width: 680px; }
+
+.promise-panel {
+  max-width: 720px;
+  text-align: center;
+  margin: 0 auto;
+}
