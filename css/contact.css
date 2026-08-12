@@ -61,6 +61,7 @@ textarea {
   border: 1px solid var(--line-200);
   border-radius: 8px;
   font: inherit;
+  font-size: 16px;
   color: var(--ink-900);
   background: var(--bg-050);
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
@@ -100,3 +101,10 @@ fieldset {
 }
 .form-status--error { color: #b3261e; }
 .form-status--ok { color: #1f6b3a; }
+
+@media (max-width: 760px) {
+  .page-hero { padding: 56px 0 64px; }
+  .page-hero h1 { font-size: clamp(1.9rem, 8vw, 2.6rem); }
+  .contact-form-wrap { padding: 24px; }
+  .info-panel { padding: 20px; }
+}

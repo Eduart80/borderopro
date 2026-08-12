@@ -37,7 +37,13 @@
 .service-row p { margin: 0; }
 .service-row .card-arrow { white-space: nowrap; margin-top: 0; }
 
+@media (max-width: 760px) {
+  .page-hero { padding: 56px 0 64px; }
+  .page-hero h1 { font-size: clamp(1.9rem, 8vw, 2.6rem); }
+}
+
 @media (max-width: 640px) {
-  .service-row { grid-template-columns: 40px 1fr; }
+  .service-row { grid-template-columns: 40px 1fr; padding: 20px; gap: 16px; }
   .service-row .card-arrow { grid-column: 2; }
+  .service-row h2 { font-size: 1.1rem; }
 }

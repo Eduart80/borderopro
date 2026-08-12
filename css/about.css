@@ -9,3 +9,8 @@
   text-align: center;
   margin: 0 auto;
 }
+
+@media (max-width: 760px) {
+  .page-hero { padding: 56px 0 64px; }
+  .page-hero h1 { font-size: clamp(1.9rem, 8vw, 2.6rem); }
+}
